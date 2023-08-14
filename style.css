@@ -65,12 +65,12 @@ body {
     font-size: 60px;
     font-weight: bold;
     line-height: 34px;
-    height: 213.3px;
+    height: 190px;
     margin-right: -1px;
     margin-top: -1px;
     padding: 0;
     text-align: center;
-    width: 213.3px;
+    width: 190px;
 }
 
 .board-row:after {
@@ -98,15 +98,18 @@ body {
 .game-info {
     margin-left: 20px;
 }
-
+.info{
+    margin-right: 20px;
+    margin-top: 10px;
+}
 .content{
-    font-size: 2rem;
-    font-family: fantasy;
-    color: #b2b3c2;
+    display: flex;
+    align-items: start;
+    font-family: sans-serif;
+    color: white;
+    margin-top: 10px;
 }
-#cells-container {
-    
-}
+
 .header {
 	height: 100px;
 	display: flex;
@@ -141,19 +144,9 @@ button{
     align-items: center;
 }
 
-#clock{
-	color: white;
-	font-weight: bold;
-	font-size: 70px;
-}
 
-.footer_text{
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-	align-items:end;
-	margin-top: 115px;
-}
+
+
 #root{
     display: flex;
     justify-content: center;
