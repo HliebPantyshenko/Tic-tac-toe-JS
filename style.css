@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #1a191f;
+    color: #b2b3c2;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 22px;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+h3 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+h4 {
+    margin-top: 0;
+    font-size: 16px;
+}
+
+h5 {
+    margin-top: 0;
+    font-size: 14px;
+}
+
+h6 {
+    margin-top: 0;
+    font-size: 12px;
+}
+
+code {
+    font-size: 1.2em;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    padding: 0;
+}
+
+.square {
+    background-color: #202328;
+    border: 2px solid #000;
+    float: left;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 34px;
+    height: 213.3px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 213.3px;
+}
+
+.board-row:after {
+    clear: both;
+    content: '';
+    display: table;
+}
+
+.status {
+    margin-bottom: 10px;
+}
+@media screen and (max-width:2400px){
+    .game {
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media screen and (max-width:1200px){
+    .game {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.game-info {
+    margin-left: 20px;
+}
+
+.content{
+    font-size: 2rem;
+    font-family: fantasy;
+    color: #b2b3c2;
+}
+#cells-container {
+    
+}
+.header {
+	height: 100px;
+	display: flex;
+	border: 1px solid white;
+	border-radius: 30px;
+	color: white;
+	font-size: 40px;
+	vertical-align: middle;
+	text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+#more{display: none;
+	color: white;
+	font-size: 20px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	padding: 0% 5%;
+}
+#btn{
+	border-bottom: 1px white inset;
+	cursor: pointer;
+    color: white;
+}
+
+button{
+	border: white 2px;
+	color: white;
+	background: transparent;
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+}
+
+#clock{
+	color: white;
+	font-weight: bold;
+	font-size: 70px;
+}
+
+.footer_text{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items:end;
+	margin-top: 115px;
+}
+#root{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}

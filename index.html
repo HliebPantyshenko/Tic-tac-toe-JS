@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/site.webmanifest">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+</head>
+
+<body>
+    <header class="bones">
+        <div class="header">
+            Тут грають в хрестики нолики
+        </div>
+        <div class="header_help">
+            <button id="btn" onclick="readMore()"> Правила</button>
+
+        </div>
+    </header>
+    <div id="bones">
+        <div id="cells-container">
+            <span id="dots">:</span><span id="more"><br>1.Нажмите на одно из 9 игровых полей чтоб сделать ход <br>
+                2.Ваша цель собрать ряд или диагональ своих символов раньше соперника<br>
+                3.Первый игрок играет крестиком, второй ноликом<br>
+                4.Используйте панель справа для перемещения между ходами</span>
+            <script src="js/main.js"></script>
+            <div id="root"></div>
+        </div>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <script async src="https://ga.jspm.io/npm:es-module-shims@1.7.0/dist/es-module-shims.js"></script>
+        <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react?dev",
+    "react-dom/client": "https://esm.sh/react-dom/client?dev"
+  }
+}
+
+</script>
+        </script>
+        <script src="game.js"></script>
+
+    </div>
+    <footer class="footer_text">
+        <div class="content">Разработчик: Глеб Пантюшенко pantushenko11@gmail.com <div class="content" id="clock">
+                10:12:12</div>
+        </div>
+        <script src="clock.js"></script>
+    </footer>
+</body>
+
+</html>
