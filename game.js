@@ -65,7 +65,8 @@ const history = [{ squares: Array(9).fill(null) }];
                 render();
             }
 
-            function jumpTo(move) {
+            const jumpTo = (move) => {
+                history.splice(move + 1);
                 currentMove = move;
                 xIsNext = move % 2 === 0;
                 render();
