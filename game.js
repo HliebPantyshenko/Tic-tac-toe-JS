@@ -13,7 +13,7 @@ const history = [{ squares: Array(9).fill(null) }];
             rootElement.appendChild(gameInfoElement);
             gameInfoElement.appendChild(olElement);
 
-            function render() {
+            const render = () => {
                 const current = history[currentMove];
                 const squares = current.squares;
 
@@ -51,8 +51,7 @@ const history = [{ squares: Array(9).fill(null) }];
                     olElement.appendChild(liElement);
                 });
             }
-
-            function handleClick(i) {
+            const handleClick = (i) =>{
                 const current = history[currentMove];
                 const squares = current.squares.slice();
                 if (calculateWinner(squares) || squares[i]) {
@@ -64,7 +63,7 @@ const history = [{ squares: Array(9).fill(null) }];
                 history.push({ squares });
                 render();
             }
-
+            
             const jumpTo = (move) => {
                 history.splice(move + 1);
                 currentMove = move;
@@ -72,7 +71,7 @@ const history = [{ squares: Array(9).fill(null) }];
                 render();
             }
 
-            function calculateWinner(squares) {
+            const calculateWinner = (squares) => {
                 const lines = [
                     [0, 1, 2],
                     [3, 4, 5],
@@ -91,5 +90,6 @@ const history = [{ squares: Array(9).fill(null) }];
                 }
                 return null;
             }
-
+            
+        
             render();
